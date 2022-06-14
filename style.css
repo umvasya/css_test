@@ -178,6 +178,6 @@ a:link, a:visited {
     background-color: rgb(14, 116, 68);
     cursor: pointer;
 }
-#rules {
-    color: #fff;
+.label-for-rules {
+    color: rgb(204, 204, 204);
 }
