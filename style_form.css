@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: black;
+    background-color: rgb(37, 36, 44);
+
+}
+
+/* AUTH */
+.auth {
+    width: 260px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px 7px;
+}
+
+.auth-title {
+    margin: 0 0 15px;
+    font-size: 20px;
+    color:black;
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.input {
+    display: block;
+    padding: 8px 10px;
+    width: 238px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 15px;
+    border-radius: 7px 7px;
+}
+
+.input:focus {
+    outline: 0;
+    border-color: #28cbd1;
+}
+
+/* Select */
+.select {
+    display: block;
+    padding: 8px 10px;
+    width: 260px;
+    height: 35px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 15px;
+    border-radius: 7px 7px;
+}
+.select:focus {
+    outline: 0;
+    border-color: #28cbd1;
+}
+
+.btn {
+    margin-top: 10px;
+    display: block;
+    width: 258px;
+    height: 35px;
+    border: 0;
+    background-color: rgb(37, 100, 61);
+    font-family: inherit;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 7px 7px;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: rgb(11, 100, 58);
+    cursor: pointer;
+}
+.btn:active {
+    background-color: rgb(2, 14, 8);
+    cursor: pointer;
+}
