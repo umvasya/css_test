@@ -1,3 +1,13 @@
+@keyframes bounce {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-100px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}
+
 body {
     font-family: monospace;
     background-image: url("https://media.istockphoto.com/vectors/dot-pattern-seamless-vector-black-and-white-vector-id669922594?b=1&k=20&m=669922594&s=170667a&w=0&h=m57iI8yEspjGusNfHvhq_g5KiDbfuYC5b8McZBiMiJc=");
@@ -54,6 +64,8 @@ p {
 }
 
 .header-nav {
+
+    align-items: center;
     font-family: inherit;
     font-weight: 500;
 
@@ -92,12 +104,17 @@ a:link, a:visited {
   }
 
 
-  /* reg */
+  /* reg window */
 .reg-modal {
     display: none;
 }
 
 .reg-modal-show {
+
+    top: 35%;
+    left: 50%;
+
+
     display: block;
     width: 280px;
     padding: 20px;
@@ -110,6 +127,8 @@ a:link, a:visited {
     color: black;
     background-color: rgb(37, 36, 44);
     box-shadow: 0px 0px 12px;
+
+    animation: bounce 1s;
 }
 
 .auth-title {
@@ -180,4 +199,18 @@ a:link, a:visited {
 }
 .label-for-rules {
     color: rgb(204, 204, 204);
+}
+
+
+.map-modal {
+    display: none;
+}
+
+.map-modal-show {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
